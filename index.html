@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <title>Prayer for Buddy's Transplant Surgery</title>
+    <style>
+        :root {
+            --primary-color: #ffd700;
+            --secondary-color: #ffffff;
+            --text-color: #ffffff;
+            --background-color: #0a1a2a;
+            --accent-color: #4a8fe7;
+            --accent-glow: 0 0 10px rgba(255, 215, 0, 0.5);
+            --love-color: #e25c78;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Source Serif Pro', serif;
+            background: var(--background-color);
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(74, 143, 231, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 85% 30%, rgba(0, 43, 85, 0.1) 0%, transparent 40%);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 1rem auto;
+            padding: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .prayer-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            text-shadow: var(--accent-glow);
+            line-height: 1.3;
+        }
+
+        .prayer-subtitle {
+            font-family: 'Source Serif Pro', serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .scripture {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin: 1.5rem 0;
+            padding: 0.5rem 2rem;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .scripture::before,
+        .scripture::after {
+            content: '"';
+            font-size: 2rem;
+            position: absolute;
+            color: var(--primary-color);
+            opacity: 0.7;
+        }
+
+        .scripture::before {
+            top: -0.5rem;
+            left: 0.5rem;
+        }
+
+        .scripture::after {
+            bottom: -1.5rem;
+            right: 0.5rem;
+        }
+
+        .scripture-reference {
+            font-family: 'Source Serif Pro', serif;
+            font-size: 1rem;
+            color: var(--secondary-color);
+            text-align: right;
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+
+        .prayer-text {
+            font-family: 'Source Serif Pro', serif;
+            font-size: 1.4rem;
+            line-height: 1.8;
+            margin: 1rem 0;
+            padding: 2rem;
+            border-radius: 15px;
+            background: rgba(10, 36, 64, 0.5);
+            box-shadow: 0 0 20px rgba(30, 87, 153, 0.2), 0 0 20px rgba(255, 215, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            color: var(--text-color);
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow-y: auto;
+            max-height: 50vh;
+            text-align: left;
+        }
+
+        .prayer-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .prayer-text strong {
+            color: var(--primary-color);
+        }
+
+        .prayer-text em {
+            font-style: italic;
+            opacity: 0.95;
+        }
+
+        .family-section {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .family-intro {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .family-prayer {
+            margin-bottom: 1.5rem;
+        }
+
+        .closing {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin: 1.5rem 0;
+        }
+
+        .pulse-effect {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0;
+            background: radial-gradient(circle at center, 
+                rgba(255, 215, 0, 0.2) 0%,
+                rgba(74, 143, 231, 0.1) 50%,
+                transparent 70%);
+            z-index: 0;
+            animation: gentle-pulse 5s infinite alternate;
+        }
+
+        @keyframes gentle-pulse {
+            0% { opacity: 0; }
+            50% { opacity: 0.3; }
+            100% { opacity: 0; }
+        }
+
+        footer {
+            font-family: 'Source Serif Pro', serif;
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            opacity: 0.7;
+            margin-top: 2rem;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="pulse-effect"></div>
+    
+    <div class="container">
+        <div class="prayer-title">A Prayer for Buddy in Surgery</div>
+        <div class="prayer-subtitle">For a Warrior Receiving New Breath, and the Family Standing Watch</div>
+        
+        <div class="scripture">
+            I will give you a new heart and put a new spirit in you; I will remove from you your heart of stone and give you a heart of flesh. And I will put my Spirit in you and move you to follow my decrees and be careful to keep my laws.
+        </div>
+        <div class="scripture-reference">Ezekiel 36:26-27</div>
+        
+        <div class="prayer-text">
+            <div class="prayer-section">
+                <p>Sovereign Lord, Creator of all that breathes and moves,</p>
+                
+                <p>At this very moment, as surgeons work with skill and precision at Columbia University Hospital, we come before Your throne of grace on behalf of our beloved Buddy – <em>Your</em> beloved Buddy. Even now, as these hours of surgery continue, we know that You are present in that operating room, guiding each hand, illuminating each decision, perfecting each movement.</p>
+                
+                <p>Lord, we acknowledge that You formed Buddy's first lungs, knitting them together in his mother's womb. And now, in Your providence, You have provided new lungs – a miracle of modern medicine and a testament to Your redemptive power. What powerful symbolism, that in the very city where toxins damaged his body, You would bring about restoration and renewal!</p>
+                
+                <p>We pray for Buddy, our warrior. Just as Captain Kirk boldly commanded the Enterprise through uncharted territory, Buddy has navigated these years of struggle with courage and determination. Now, as new lungs are being placed within him, we ask that his body would receive them as a sacred gift. Let every cell, every tissue, every vessel embrace this new breath of life.</p>
+                
+                <p>Guard against rejection. Protect against infection. Expedite healing. Minimize pain. Maximize recovery.</p>
+                
+                <p>As these lungs fill with air for the first time in their new home, let them be filled with Your breath, Your spirit, Your life-giving power. Where the enemy sought destruction, You bring restoration. Where darkness threatened to overcome, Your light shines all the brighter.</p>
+            </div>
+            
+            <div class="family-section">
+                <div class="family-intro">For the Family Standing Watch:</div>
+                
+                <div class="family-prayer">
+                    <p>Gracious Father, we lift up Carol, the devoted wife who has stood faithfully by Buddy's side through their incredible journey together. From high school sweethearts to building a lifetime together, they've shared nearly half a century of knowing each other. She is the heart of their home, the keeper of family traditions, and the quiet strength behind their enduring love story. As she waits through these long hours, fill her with Your perfect peace. Strengthen her hands that have prepared countless family meals, her heart that has nurtured their children, and her spirit that remains steadfastly in love with the man she's shared her life with. Remind her of all the storms they've weathered together, and assure her that this one too shall pass as they continue their journey side by side.</p>
+                    
+                    <p>For Bryan, the son who carries his father's strength and wisdom, we pray comfort. As he balances the concerns for his father with care for his own family, grant him wisdom, patience, and supernatural capacity. Let his Harvard-trained mind find rest in the knowledge that You are in control.</p>
+                    
+                    <p>For Kelly, whose smile reflects her father's joy, we ask for Your tender embrace. As she cheers for her beloved Pittsburgh Penguins with the same passion her father taught her, comfort her heart today. Let her vibrant spirit and youthful energy be a source of light during this time, and may the same determination she admires in her hockey heroes strengthen her now as she supports her dad.</p>
+                    
+                    <p>For the spouses and grandchildren, for every heart connected to Buddy's, provide comfort, understanding, and hope. Let the little ones know their grandfather's warrior spirit, not just through stories, but through his continued presence in their lives.</p>
+                </div>
+            </div>
+            
+            <div class="prayer-section">
+                <p>Lord, we stand on Your promises today. Your Word declares in Psalm 33:4 that "the word of the LORD is right and true; he is faithful in all he does." We trust in Your faithfulness now.</p>
+                
+                <p>We believe that these hours of surgery, though long and difficult, are not the end of Buddy's story, but the beginning of a new chapter. We trust that the same God who brought him safely through decades of struggle has magnificent plans for his future. We hold fast to the promise of Jeremiah 29:11, that Your thoughts toward him are "plans to prosper and not to harm, plans to give hope and a future."</p>
+                
+                <p>Let this miracle become a testimony that echoes through generations. Let Buddy's healing become a beacon of hope for others walking similar paths. And let Your name be glorified through every breath he takes with these new lungs.</p>
+            </div>
+            
+            <div class="closing">
+                We pray this with confidence and faith, in the mighty and healing name of Jesus Christ, the Great Physician, who gives breath and life to all.
+                <p>Amen.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        Shared in faith and love, as Buddy receives new breath at Columbia University Hospital.
+    </footer>
+</body>
+</html>
